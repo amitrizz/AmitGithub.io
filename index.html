@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8357a0b2f4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Sevices</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">contact me</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX desginer and Full stack developer</p>
+          <h1>Hi,I'm <span>Amit</span> <br />Kumar From India</h1>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+              odit quos suscipit dolorum quae quis reiciendis laudantium alias
+              ipsa laborum, minus totam tempora, accusamus molestiae inventore
+              corporis voluptatem error odio mollitia voluptate ullam! Neque,
+              veritatis. Eligendi sequi nobis dolore ipsum veritatis nulla qui
+              consequuntur molestiae, nostrum cupiditate alias totam dolorum?
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links" onclick="openTab('Skills')">Skills</p>
+              <p class="tab-links active-link" onclick="openTab('Experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('Education')">Education</p>
+            </div>
+            <div class="tab-content" id="Skills">
+              <ul>
+                <li>
+                  <span>UI/UX</span><br />
+                  Designing Web/app Interfaces
+                </li>
+                <li>
+                  <span>Full Stack developer</span><br />
+                  For Developing Website
+                </li>
+                <li>
+                  <span>Data Analyst</span><br />
+                  Analysing Data for analysis
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content active-tab" id="Experience">
+              <ul>
+                <li>
+                  <span>12/2023-01/2024</span><br />
+                  Did Data analyst Internship From Internship Studio
+                </li>
+                <li>
+                  <span>10/2023-11/2023</span><br />
+                  Did Cloud Computing Training From Internship Studio
+                </li>
+                <li>
+                  <span>01/2022-Present</span><br />
+                  Member of Parallel Computing Club With position of Graphic and
+                  Desgins
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content" id="Education">
+              <ul>
+                <li>
+                  <span>2024</span><br />
+                  Doing MCA From NIT Trichy
+                </li>
+                <li>
+                  <span>2020</span><br />
+                  Did Bsc From MDU University
+                </li>
+                <li>
+                  <span>2017</span><br />
+                  Did 12th From Govertment School
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------------------ Services----------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="serivces-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Repudiandae iure eveniet aliquid architecto tempora illum
+              accusamus enim reprehenderit repellat sequi. Maxime nisi similique
+              corporis tenetur autem quis illum inventore beatae!
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-user"></i>
+            <h2>Full Stack Developer</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Repudiandae iure eveniet aliquid architecto tempora illum
+              accusamus enim reprehenderit repellat sequi. Maxime nisi similique
+              corporis tenetur autem quis illum inventore beatae!
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-chart-simple"></i>
+            <h2>Data Analyst</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Repudiandae iure eveniet aliquid architecto tempora illum
+              accusamus enim reprehenderit repellat sequi. Maxime nisi similique
+              corporis tenetur autem quis illum inventore beatae!
+            </p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------portfolio----------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Socila Media</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                quidem eius perspiciatis nostrum iste amet dicta cum, possimus
+                ducimus facere?
+              </p>
+              <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Socila Media</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                quidem eius perspiciatis nostrum iste amet dicta cum, possimus
+                ducimus facere?
+              </p>
+              <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Socila Media</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                quidem eius perspiciatis nostrum iste amet dicta cum, possimus
+                ducimus facere?
+              </p>
+              <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!------------------------ contact -------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>contact@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i>1344354554</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Enter You Name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Enter You email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copy right Section -->
+    <div class="Copyright">
+      <p>CopyRight<i class="fas fa-heart"></i> @ Are reserved To my Profile</p>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabContents = document.getElementsByClassName("tab-content");
+      function openTab(tabname) {
+        for (tabcontent of tabContents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbyvm3FusSJ-o8GcWTXjEql-ju_igaQy6rQVETl6HPdrFmJCvw9_7fU6fG-wJKW-bKA6/exec";
+
+      const form = document.forms["submit-to-google-sheet"];
+      const msg=document.getElementById('msg');
+
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML="Message Sent Sucessfully";
+            setTimeout(function(){
+                msg.innerHTML="";
+            },5000);
+          })
+          form.reset()
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
