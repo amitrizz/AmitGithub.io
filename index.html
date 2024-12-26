@@ -1,278 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/8357a0b2f4.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <div id="header">
-      <div class="container">
-        <nav>
-          <img src="images/random.png" class="logo" />
-          <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Sevices</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">contact me</a></li>
-            <i class="fas fa-times" onclick="closemenu()"></i>
-          </ul>
-          <i class="fas fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-          <p>UI/UX designer and Full stack developer</p>
-          <h1>Hi,I'm <span>Amit</span> <br />Kumar From India</h1>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/8357a0b2f4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/random.png" class="logo" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Sevices</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">contact me</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Software Developer and Full stack developer</p>
+        <h1>Hi,I'm <span>Amit</span> <br />Kumar From India</h1>
       </div>
     </div>
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="images/user.png" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About me</h1>
+  </div>
+  <!------------------------ Services----------------- -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="serivces-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Software Developer</h2>
+          <p>
+            &nbsp;&nbsp;&nbsp; Building robust web applications using modern technologies like Python, Django, Flask,
+            and React.js.
+            Expertise in developing scalable systems, creating RESTful APIs, and ensuring high performance and security
+            across platforms.
+          </p>
+        </div>
+        <div>
+          <i class="fa-solid fa-user"></i>
+          <h2>Full Stack Developer</h2>
+          <p>
+            &nbsp;&nbsp;&nbsp; Offering end-to-end web development solutions with proficiency in both front-end
+            (HTML, CSS, JavaScript, React.js, Bootstrap) and back-end (Node.js, Express, Django, Flask) technologies.
+            Focus on creating dynamic, responsive, and user-friendly applications.
+          </p>
+        </div>
+        <div>
+          <i class="fa-solid fa-chart-simple"></i>
+          <h2>Data Analyst</h2>
+          <p>
+            &nbsp;&nbsp;&nbsp;Transforming raw data into actionable insights through advanced data analysis using Python
+            (Pandas, NumPy),
+            SQL, and data visualization tools like Matplotlib and Seaborn. Expertise in data cleaning, trend
+            identification, and creating data-driven reports.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ---------------------portfolio----------------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/team.jpg" />
+          <div class="layer">
+            <h3>Team Management System</h3>
             <p>
-              Hello there! I am Amit, a passionate and driven software enthusiast pursuing my Master's in Computer Applications at the prestigious National Institute of Technology, Tiruchirappalli, Tamil Nadu, India.
-Education.
-I am on the journey of mastering the realm of technology, currently holding a Master of Computer Applications (MCA) degree earned from NIT Trichy from July 2021 to June 2024.
-I am looking for exciting opportunities as a Software Engineer / UI/UX Designer / Data Analyst,  aiming to contribute my skills and experiences to innovative projects. My career objective revolves around leveraging my expertise in problem-solving, coding (especially in C++ and Python), UI/UX design, and project management.
+              In this project, we create teams and assign employees to those teams, with certain conditions for team
+              creation. No two employees can have the same role within a team.
             </p>
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="openTab('Skills')">Skills</p>
-              <p class="tab-links " onclick="openTab('Experience')">
-                Experience
-              </p>
-              <p class="tab-links" onclick="openTab('Education')">Education</p>
+            <a href="https://heliverse-murex.vercel.app/" target="_blank"><i
+                class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/employee.jpg" />
+          <div class="layer">
+            <h3>Employee Management System</h3>
+            <p>
+              In this project, we handle various employee management tasks such as adding, updating, and deleting
+              employee records. Additionally, users can apply filters like search and sort to efficiently manage and
+              view the data.
+            </p>
+            <a href="https://database-employee-management-using-d55q.onrender.com" target="_blank"><i
+              class="fa-solid fa-up-right-from-square"></i></a>
             </div>
-            <div class="tab-content active-tab" id="Skills">
+        </div>
+        <div class="work">
+          <img src="images/healthblog.png" />
+          <div class="layer">
+            <h3>Health Blogs Website</h3>
+            <p>
+              In this project, users can create blogs, write comments on blogs, and view all their published blogs as
+              well as other users' blogs. To comment on a blog, users must log in first.
+            </p>
+            <a href="https://health-blog-ibuu.onrender.com/" target="_blank"><i
+                class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/amitrizz?tab=repositories" target="_blank" class="btn">See More</a>
+    </div>
+  </div>
+  
+  <div id="about">
+    <div class="container">
+      <h1 class="sub-title">About me <img class="about-img" src="images/profile.jpg" alt="">
+      </h1>
+      <div class="row">
+  
+        <div class="about-col-2 col-6">
+  
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="openTab('Skills')">Skills</p>
+            <p class="tab-links " onclick="openTab('Experience')">
+              Experience
+            </p>
+            <p class="tab-links" onclick="openTab('Education')">Education</p>
+          </div>
+          <div class="tab-content active-tab" id="Skills">
+            <ul>
+              <li>
+                <span>Technical Skills</span><br />
+                <ul class="numbered-list">
+                  <li>
+                    <b>Programming Languages:</b>Python, Java, JavaScript, C++<br />
+                  </li>
+  
+                  <li>
+  
+                    <b>Web Development:</b>Django, Flask, React.js, Node.js, HTML, CSS, Bootstrap, WordPress<br />
+                  </li>
+                  <li>
+  
+                    <b>Database Management:</b>MySQL, PostgreSQL, MongoDB<br />
+                  </li>
+                  <li>
+  
+                    <b>Data Analysis:</b>Pandas, NumPy, Data Visualization (Matplotlib, Seaborn), SQL<br />
+                  </li>
+                  <li>
+  
+                    <b>Version Control:</b>Git, GitHub+<br />
+                  </li>
+                  <li>
+  
+                    <b>APIs:</b>RESTful API development, JSON, Postman<br />
+                  </li>
+                  <li>
+  
+                    <b>Tools & Technologies:</b>Metabase, Vscode, Pycharm<br />
+                  </li>
+                  <li>
+  
+                    <b>Cloud & Deployment:</b>AWS, Docker<br />
+                  </li>
+                  <li>
+  
+                    <b>Software Development:</b>Agile, Scrum<br />
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span>Soft Skills</span><br />
+                <ul>
+                  <li>
+  
+                    Problem-solving
+                  </li>
+                  <li>
+  
+                    Team collaboration and communication
+                  </li>
+                  <li>
+  
+                    Time management
+                  </li>
+                  <li>
+  
+                    Adaptability and continuous learning
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content " id="Experience">
+            <ul>
+              <li>
+                <span>06/2024-Present</span><br />
+                Software Development Intern at Babynam
+                <ul>
+                  <li>Developed and maintained web applications using Django, Flask, and React.js.</li>
+                  <li>Built and integrated RESTful APIs for frontend-backend communication.</li>
+                  <li>Worked with MySQL and PostgreSQL databases for efficient data management.</li>
+                  <li>Implemented data analysis workflows using Pandas, NumPy, and SQL for business insights.</li>
+                  <li>Created dynamic dashboards on Metabase for real-time reporting.</li>
+                  <li>Collaborated in cross-functional teams following Agile methodologies.</li>
+                </ul>
+              </li>
+              <li>
+                <span>01/2024-05/2024</span><br />
+                Full Stack Development Intern
+                <ul>
+                  <li>Built responsive web pages using HTML, CSS, React, and Bootstrap 5.</li>
+                  <li>Worked with PHP backend to implement features and improve website functionality.</li>
+                  <li>Assisted in database management and optimized queries for performance.</li>
+                  <li>Debugged and troubleshot issues to enhance system performance.</li>
+                  <li>Participated in daily stand-up meetings and contributed to ongoing development tasks.</li>
+                </ul>
+              </li>
+            </ul>
+  
+          </div>
+          <div class="tab-content" id="Education">
+            <ul>
               <ul>
                 <li>
-                  <span>UI/UX</span><br />
-                  Designing Web/app Interfaces
+                  <span>Jul 2021 - Jul 2024</span><br />
+                  Master's in Computer Applications (MCA) from National Institute of Technology, Tiruchirappalli(NIT
+                  Trichy)
                 </li>
                 <li>
-                  <span>Full Stack developer</span><br />
-                  For Developing Website
-                </li>
-                <li>
-                  <span>Data Analyst</span><br />
-                  Analyzing data for Finding Insights from the Data
+                  <span>Jul 2018 - Oct 2021</span><br />
+                  Bachelor of Computer Science (BSc) from Maharshi Dayanand University, Rohtak
                 </li>
               </ul>
-            </div>
-            <div class="tab-content " id="Experience">
-              <ul>
-                <li>
-                  <span>12/2023-01/2024</span><br />
-                  Data Analyst Internship From Internship Studio
-                </li>
-                <li>
-                  <span>10/2023-11/2023</span><br />
-                  Cloud Computing Training From Internship Studio
-                </li>
-                <li>
-                  <span>01/2022-Present</span><br />
-                  Member of Parallel Computing Club With the position of Graphic and
-                  Designs
-                </li>
-              </ul>
-            </div>
-            <div class="tab-content" id="Education">
-              <ul>
-                <li>
-                  <span>2024</span><br />
-                  Doing MCA From NIT Trichy
-                </li>
-                <li>
-                  <span>2020</span><br />
-                  Did BSc from MDU University
-                </li>
-                <li>
-                  <span>2017</span><br />
-                  Did 12th From Government School
-                </li>
-              </ul>
-            </div>
+  
+            </ul>
           </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  <!------------------------ contact -------------------- -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fas fa-paper-plane"></i><a style="color: aliceblue;" href="mailto:amitsagar121001@gmail.com" target="_blank">amitsagar121001@gmail.com</a>
+          </p>
+          <p><i class="fas fa-phone-square-alt"></i><a style="color: aliceblue;" href="tel:+918468923343" target="_blank">8468923343</a>
+          </p>
+          <div class="social-icons">
+            <a href="https://twitter.com/Amit923343" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/Amit923343" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/amitk_016/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/amit016/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="https://drive.google.com/file/d/1ZsuyPDETJ6IEfObNGKwPxmIwYsAoAF4P/view?usp=sharing" target="_blank" class="btn btn2">View/Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Enter You Name" required />
+            <input type="email" name="Email" placeholder="Enter You email" required />
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
         </div>
       </div>
     </div>
-    <!------------------------ Services----------------- -->
-    <div id="services">
-      <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="serivces-list">
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>UI/UX Design</h2>
-            <p>
-              UI/UX Designer: Crafting intuitive digital experiences with expertise in user research, wireframing, and prototyping for visually appealing interfaces, ensuring seamless and engaging user interactions.
-            </p>
-            <a href="#">learn more</a>
-          </div>
-          <div>
-            <i class="fa-solid fa-user"></i>
-            <h2>Full Stack Developer</h2>
-            <p>Full Stack Developer: End-to-end web development solutions, proficient in front-end (HTML, CSS, JavaScript, React) and back-end (Node.js, Express, MongoDB) technologies, ensuring robust databases and dynamic interfaces.
-            </p>
-            <a href="#">learn more</a>
-          </div>
-          <div>
-            <i class="fa-solid fa-chart-simple"></i>
-            <h2>Data Analyst</h2>
-            <p>
-              Data Analyst: Transforming raw data into actionable insights through statistical analysis, data visualization (Python, Power BI), and database management. Expertise includes data cleaning, trend identification, and effective communication of insights.
-            </p>
-            <a href="#">learn more</a>
-          </div>
-        </div>
-      </div>
-    </div>
+  </div>
 
-    <!-- ---------------------portfolio----------------- -->
-    <div id="portfolio">
-      <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-          <div class="work">
-            <img src="images/work-1.png" />
-            <div class="layer">
-              <h3>Socila Media</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                quidem eius perspiciatis nostrum iste amet dicta cum, possimus
-                ducimus facere?
-              </p>
-              <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="images/work-2.png" />
-            <div class="layer">
-              <h3>Socila Media</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                quidem eius perspiciatis nostrum iste amet dicta cum, possimus
-                ducimus facere?
-              </p>
-              <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="images/work-3.png" />
-            <div class="layer">
-              <h3>Socila Media</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                quidem eius perspiciatis nostrum iste amet dicta cum, possimus
-                ducimus facere?
-              </p>
-              <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
-            </div>
-          </div>
-        </div>
-        <a href="#" class="btn">See More</a>
-      </div>
-    </div>
+  <!-- Copy right Section -->
+  <div class="Copyright">
+    <p>CopyRight<i class="fas fa-heart"></i> @ Are reserved To my Profile</p>
+  </div>
 
-    <!------------------------ contact -------------------- -->
-    <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p><i class="fas fa-paper-plane"></i>amitsagar121001@gmail.com</p>
-            <p><i class="fas fa-phone-square-alt"></i>8468923343</p>
-            <div class="social-icons">
-              <a href="https://twitter.com/Amit923343"><i class="fa-brands fa-facebook"></i></a>
-              <a href="https://twitter.com/Amit923343"><i class="fa-brands fa-twitter"></i></a>
-              <a href="https://www.instagram.com/amitk_016/?hl=en"><i class="fa-brands fa-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/amit016/"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-            <a href="images/cv.pdf" download class="btn btn2">download CV</a>
-          </div>
-          <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input
-                type="text"
-                name="Name"
-                placeholder="Enter You Name"
-                required
-              />
-              <input
-                type="email"
-                name="Email"
-                placeholder="Enter You email"
-                required
-              />
-              <textarea
-                name="Message"
-                rows="6"
-                placeholder="Your Message"
-              ></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            <span id="msg"></span>
-          </div>
-        </div>
-      </div>
-    </div>
+  <script src="index.js"></script>
+</body>
 
-    <!-- Copy right Section -->
-    <div class="Copyright">
-      <p>CopyRight<i class="fas fa-heart"></i> @ Are reserved To my Profile</p>
-    </div>
-
-    <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabContents = document.getElementsByClassName("tab-content");
-      function openTab(tabname) {
-        for (tabcontent of tabContents) {
-          tabcontent.classList.remove("active-tab");
-        }
-        for (tablink of tablinks) {
-          tablink.classList.remove("active-link");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-      }
-    </script>
-    <script>
-      var sidemenu = document.getElementById("sidemenu");
-      function openmenu() {
-        sidemenu.style.right = "0";
-      }
-      function closemenu() {
-        sidemenu.style.right = "-200px";
-      }
-    </script>
-    <script>
-      const scriptURL = "https://script.google.com/macros/s/AKfycbyvm3FusSJ-o8GcWTXjEql-ju_igaQy6rQVETl6HPdrFmJCvw9_7fU6fG-wJKW-bKA6/exec";
-
-      const form = document.forms["submit-to-google-sheet"];
-      const msg=document.getElementById('msg');
-
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            msg.innerHTML="Message Sent Sucessfully";
-            setTimeout(function(){
-                msg.innerHTML="";
-            },5000);
-          })
-          form.reset()
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
-  </body>
 </html>
