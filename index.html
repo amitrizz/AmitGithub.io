@@ -1151,11 +1151,51 @@
             opacity: 0.8;
         }
 
+        .mobile-cta-bar{
+            display: none;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
             }
+           .hearright{
+            display: none;
+           }
+
+           .cta-bar{
+            display: none;
+           }
+           .mobile-cta-bar{
+            display: block;
+           }
+
+           
+        .mobile-cta-bar {
+            background: #FF3B00;
+            /* Premium red-orange */
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1100;
+            /* higher than header */
+        }
+
+        /* Email & Phone Links */
+        .mobile-cta-bar a {
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            margin-left: 4px;
+        }
+
 
             .mobile-menu {
                 display: flex;
@@ -1251,30 +1291,6 @@
             padding-top: 26px !important;
         }
 
-        /* CTA Bar */
-        .cta-bar {
-            background: #FF3B00;
-            /* Premium red-orange */
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 14px;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1100;
-            /* higher than header */
-        }
-
-        /* Email & Phone Links */
-        .cta-bar a {
-            color: white;
-            font-weight: 600;
-            text-decoration: none;
-            margin-left: 4px;
-        }
 
         .cta-left span {
             margin-right: 20px;
@@ -1317,6 +1333,14 @@
         <div class="cta-right">
 
             <span>📞 Customer Support: +91-9716273213 Mon-Sat (10 AM - 6 PM)</span>
+        </div>
+    </div>
+    <div class="mobile-cta-bar">
+        <div class="mobile-cta-left">
+            <span>📧<a href="mailto:sarikfaruqui@gmail.com">sarikfaruqui@gmail.com</a></span>
+        </div>
+        <div class="mobile-cta-right">
+            <span>📞 +91-9716273213</span>
         </div>
     </div>
     <!-- Header -->
@@ -1566,7 +1590,7 @@
             </div>
             <div class="stat-card">
                 <div class="stat-icon">⭐</div>
-                <div class="stat-number" data-target="4.9">0</div>
+                <div class="stat-number" data-target="4.8">0</div>
                 <div class="stat-label">Student Rating</div>
             </div>
         </div>
