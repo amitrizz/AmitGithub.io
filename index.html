@@ -2,287 +2,223 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/8357a0b2f4.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SquNik — Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <div id="header">
+  <div class="topbar">
     <div class="container">
-      <nav>
-        <img src="images/random.png" class="logo" />
-        <ul id="sidemenu">
-          <li><a href="#header">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Sevices</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">contact me</a></li>
-          <i class="fas fa-times" onclick="closemenu()"></i>
-        </ul>
-        <i class="fas fa-bars" onclick="openmenu()"></i>
-      </nav>
-      <div class="header-text">
-        <p>Software Developer and Full stack developer</p>
-        <h1>Hi,I'm <span>Amit</span> <br />Kumar From India</h1>
+      <div class="left">
+        <span>Email: support@squnik.in</span>
       </div>
-    </div>
-  </div>
-  <!------------------------ Services----------------- -->
-  <div id="services">
-    <div class="container">
-      <h1 class="sub-title">My Services</h1>
-      <div class="serivces-list">
-        <div>
-          <i class="fa-solid fa-code"></i>
-          <h2>Software Developer</h2>
-          <p>
-            &nbsp;&nbsp;&nbsp; Building robust web applications using modern technologies like Python, Django, Flask,
-            and React.js.
-            Expertise in developing scalable systems, creating RESTful APIs, and ensuring high performance and security
-            across platforms.
-          </p>
-        </div>
-        <div>
-          <i class="fa-solid fa-user"></i>
-          <h2>Full Stack Developer</h2>
-          <p>
-            &nbsp;&nbsp;&nbsp; Offering end-to-end web development solutions with proficiency in both front-end
-            (HTML, CSS, JavaScript, React.js, Bootstrap) and back-end (Node.js, Express, Django, Flask) technologies.
-            Focus on creating dynamic, responsive, and user-friendly applications.
-          </p>
-        </div>
-        <div>
-          <i class="fa-solid fa-chart-simple"></i>
-          <h2>Data Analyst</h2>
-          <p>
-            &nbsp;&nbsp;&nbsp;Transforming raw data into actionable insights through advanced data analysis using Python
-            (Pandas, NumPy),
-            SQL, and data visualization tools like Matplotlib and Seaborn. Expertise in data cleaning, trend
-            identification, and creating data-driven reports.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- ---------------------portfolio----------------- -->
-  <div id="portfolio">
-    <div class="container">
-      <h1 class="sub-title">My Work</h1>
-      <div class="work-list">
-        <div class="work">
-          <img src="images/team.jpg" />
-          <div class="layer">
-            <h3>Team Management System</h3>
-            <p>
-              In this project, we create teams and assign employees to those teams, with certain conditions for team
-              creation. No two employees can have the same role within a team.
-            </p>
-            <a href="https://heliverse-murex.vercel.app/" target="_blank"><i
-                class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-        </div>
-        <div class="work">
-          <img src="images/employee.jpg" />
-          <div class="layer">
-            <h3>Employee Management System</h3>
-            <p>
-              In this project, we handle various employee management tasks such as adding, updating, and deleting
-              employee records. Additionally, users can apply filters like search and sort to efficiently manage and
-              view the data.
-            </p>
-            <a href="https://database-employee-management-using-d55q.onrender.com" target="_blank"><i
-              class="fa-solid fa-up-right-from-square"></i></a>
-            </div>
-        </div>
-        <div class="work">
-          <img src="images/healthblog.png" />
-          <div class="layer">
-            <h3>Health Blogs Website</h3>
-            <p>
-              In this project, users can create blogs, write comments on blogs, and view all their published blogs as
-              well as other users' blogs. To comment on a blog, users must log in first.
-            </p>
-            <a href="https://health-blog-ibuu.onrender.com/" target="_blank"><i
-                class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-        </div>
-      </div>
-      <a href="https://github.com/amitrizz?tab=repositories" target="_blank" class="btn">See More</a>
-    </div>
-  </div>
-  
-  <div id="about">
-    <div class="container">
-      <h1 class="sub-title">About me <img class="about-img" src="images/profile.jpg" alt="">
-      </h1>
-      <div class="row">
-  
-        <div class="about-col-2 col-6">
-  
-          <div class="tab-titles">
-            <p class="tab-links active-link" onclick="openTab('Skills')">Skills</p>
-            <p class="tab-links " onclick="openTab('Experience')">
-              Experience
-            </p>
-            <p class="tab-links" onclick="openTab('Education')">Education</p>
-          </div>
-          <div class="tab-content active-tab" id="Skills">
-            <ul>
-              <li>
-                <span>Technical Skills</span><br />
-                <ul class="numbered-list">
-                  <li>
-                    <b>Programming Languages:</b>Python, Java, JavaScript, C++<br />
-                  </li>
-  
-                  <li>
-  
-                    <b>Web Development:</b>Django, Flask, React.js, Node.js, HTML, CSS, Bootstrap, WordPress<br />
-                  </li>
-                  <li>
-  
-                    <b>Database Management:</b>MySQL, PostgreSQL, MongoDB<br />
-                  </li>
-                  <li>
-  
-                    <b>Data Analysis:</b>Pandas, NumPy, Data Visualization (Matplotlib, Seaborn), SQL<br />
-                  </li>
-                  <li>
-  
-                    <b>Version Control:</b>Git, GitHub+<br />
-                  </li>
-                  <li>
-  
-                    <b>APIs:</b>RESTful API development, JSON, Postman<br />
-                  </li>
-                  <li>
-  
-                    <b>Tools & Technologies:</b>Metabase, Vscode, Pycharm<br />
-                  </li>
-                  <li>
-  
-                    <b>Cloud & Deployment:</b>AWS, Docker<br />
-                  </li>
-                  <li>
-  
-                    <b>Software Development:</b>Agile, Scrum<br />
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <span>Soft Skills</span><br />
-                <ul>
-                  <li>
-  
-                    Problem-solving
-                  </li>
-                  <li>
-  
-                    Team collaboration and communication
-                  </li>
-                  <li>
-  
-                    Time management
-                  </li>
-                  <li>
-  
-                    Adaptability and continuous learning
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="tab-content " id="Experience">
-            <ul>
-              <li>
-                <span>06/2024-Present</span><br />
-                Software Development Intern at Babynam
-                <ul>
-                  <li>Developed and maintained web applications using Django, Flask, and React.js.</li>
-                  <li>Built and integrated RESTful APIs for frontend-backend communication.</li>
-                  <li>Worked with MySQL and PostgreSQL databases for efficient data management.</li>
-                  <li>Implemented data analysis workflows using Pandas, NumPy, and SQL for business insights.</li>
-                  <li>Created dynamic dashboards on Metabase for real-time reporting.</li>
-                  <li>Collaborated in cross-functional teams following Agile methodologies.</li>
-                </ul>
-              </li>
-              <li>
-                <span>01/2024-05/2024</span><br />
-                Full Stack Development Intern
-                <ul>
-                  <li>Built responsive web pages using HTML, CSS, React, and Bootstrap 5.</li>
-                  <li>Worked with PHP backend to implement features and improve website functionality.</li>
-                  <li>Assisted in database management and optimized queries for performance.</li>
-                  <li>Debugged and troubleshot issues to enhance system performance.</li>
-                  <li>Participated in daily stand-up meetings and contributed to ongoing development tasks.</li>
-                </ul>
-              </li>
-            </ul>
-  
-          </div>
-          <div class="tab-content" id="Education">
-            <ul>
-              <ul>
-                <li>
-                  <span>Jul 2021 - Jul 2024</span><br />
-                  Master's in Computer Applications (MCA) from National Institute of Technology, Tiruchirappalli(NIT
-                  Trichy)
-                </li>
-                <li>
-                  <span>Jul 2018 - Oct 2021</span><br />
-                  Bachelor of Computer Science (BSc) from Maharshi Dayanand University, Rohtak
-                </li>
-              </ul>
-  
-            </ul>
-          </div>
-        </div>
-  
-      </div>
-    </div>
-  </div>
-  <!------------------------ contact -------------------- -->
-  <div id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="contact-left">
-          <h1 class="sub-title">Contact Me</h1>
-          <p><i class="fas fa-paper-plane"></i><a style="color: aliceblue;" href="mailto:amitsagar121001@gmail.com" target="_blank">amitsagar121001@gmail.com</a>
-          </p>
-          <p><i class="fas fa-phone-square-alt"></i><a style="color: aliceblue;" href="tel:+918468923343" target="_blank">8468923343</a>
-          </p>
-          <div class="social-icons">
-            <a href="https://twitter.com/Amit923343" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://twitter.com/Amit923343" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.instagram.com/amitk_016/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/amit016/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          </div>
-          <a href="https://drive.google.com/file/d/1ZsuyPDETJ6IEfObNGKwPxmIwYsAoAF4P/view?usp=sharing" target="_blank" class="btn btn2">View/Download CV</a>
-        </div>
-        <div class="contact-right">
-          <form name="submit-to-google-sheet">
-            <input type="text" name="Name" placeholder="Enter You Name" required />
-            <input type="email" name="Email" placeholder="Enter You email" required />
-            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-            <button type="submit" class="btn btn2">Submit</button>
-          </form>
-          <span id="msg"></span>
+      <div class="right">
+        <span>+91-8076660204 (Mon–Sat, 10 AM–6 PM)</span>
+        <div class="auth">
+          <a href="#">SIGN IN</a>
+          <a href="#">SIGN UP</a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Copy right Section -->
-  <div class="Copyright">
-    <p>CopyRight<i class="fas fa-heart"></i> @ Are reserved To my Profile</p>
+  <header>
+    <div class="container nav" id="nav">
+      <a class="brand" href="index.html">
+        <span class="logo"></span>
+        <span>SquNik</span>
+      </a>
+      <button class="hamburger" id="menuBtn">☰</button>
+      <div class="search">
+        <input type="text" placeholder="Search For Courses" aria-label="Search for courses" />
+        <button aria-label="Search">🔍</button>
+      </div>
+      <div class="navlinks">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <a href="courses.html">Our Courses ▾</a>
+          <div class="dropdown-content">
+            <a href="courses.html#sap">SAP</a>
+            <a href="courses.html#excel">MS Excel</a>
+            <a href="courses.html#accounting">Accounting</a>
+            <a href="courses.html#powerbi">Power BI</a>
+            <a href="courses.html#interview">Interview Preparation</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="live.html">Live Courses ▾</a>
+          <div class="dropdown-content">
+            <a href="live.html#ongoing">Ongoing</a>
+            <a href="live.html#upcoming">Upcoming</a>
+          </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="hero"
+    style="background-image: url('https://www.squnik.in/assets/images/bg/hero-bg-08.jpg'); background-size: cover;">
+
+    <div class="container">
+      <div>
+        <div class="eyebrow">ENROLL • LEARN • GROW • REPEAT</div>
+        <h1>Maximize Your Time With Us and Find The Right Instructor <span class="accent">For You</span></h1>
+        <p class="sub">Enroll, learn, grow, repeat! Get ready to achieve your learning goals with SquNik.</p>
+        <div class="actions">
+          <a class="btn primary" href="courses.html">Explore Courses</a>
+          <a class="btn ghost" href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="slideshow-container" id="carousel">
+    <div class="feature-slides" id="slides">
+
+      <!-- MIS English -->
+      <div class="feature-card">
+        <div class="card-header" style="border-radius: 50%; "><img  src="https://www.squnik.in/storage/photos/1/5464.png" alt="" width="50%" height="50%"></div>
+
+        <div class="btn btn-buy">Buy Now</div>
+      </div>
+      <!-- MIS English -->
+      <div class="course-card">
+        <div class="card-header">MIS Reporting (English)</div>
+        <img src="https://www.squnik.in/storage/photos/1/5464.png" alt="">
+        <div class="btn btn-buy">Buy Now</div>
+      </div>
+      <!-- MIS English -->
+      <div class="course-card">
+        <div class="card-header">MIS Reporting (English)</div>
+        <img src="https://www.squnik.in/storage/photos/1/5464.png" alt="">
+        <div class="btn btn-buy">Buy Now</div>
+      </div>
+      <!-- MIS English -->
+      <div class="course-card">
+        <div class="card-header">MIS Reporting (English)</div>
+        <img src="https://www.squnik.in/storage/photos/1/5464.png" alt="">
+        <div class="btn btn-buy">Buy Now</div>
+      </div>
+      <!-- MIS English -->
+      <div class="course-card">
+        <div class="card-header">MIS Reporting (English)</div>
+        <img src="https://www.squnik.in/storage/photos/1/5464.png" alt="">
+        <div class="btn btn-buy">Buy Now</div>
+      </div>
+
+    </div>
+
+    <!-- Navigation -->
+    <div class="prev" onclick="moveSlide(-1)">❮</div>
+    <div class="next" onclick="moveSlide(1)">❯</div>
   </div>
 
-  <script src="index.js"></script>
+
+
+  <div class="slideshow-container" id="carousel">
+    <div class="slides" id="slides">
+
+      <!-- MIS English -->
+      <div class="course-card">
+        <div class="card-header">MIS Reporting (English)</div>
+        <div class="info">
+          <div class="rating">⭐⭐⭐⭐⭐ (4.9/7)</div>
+          <p>50+ Candidates</p>
+          <div class="price"><del>₹10000</del> ₹2999</div>
+        </div>
+        <div class="btns">
+          <div class="btn btn-info">Course Info</div>
+          <div class="btn btn-buy">Buy Now</div>
+        </div>
+      </div>
+
+      <!-- MIS Hindi -->
+      <div class="course-card">
+        <div class="card-header">MIS Reporting (Hindi)</div>
+        <div class="info">
+          <div class="rating">⭐⭐⭐⭐⭐ (4.8/8)</div>
+          <p>100+ Students</p>
+          <div class="price"><del>₹10000</del> ₹2999</div>
+        </div>
+        <div class="btns">
+          <div class="btn btn-info">Course Info</div>
+          <div class="btn btn-buy">Buy Now</div>
+        </div>
+      </div>
+
+      <!-- SAP FICO -->
+      <div class="course-card">
+        <div class="card-header">SAP FICO (English)</div>
+        <div class="info">
+          <div class="rating">⭐⭐⭐⭐⭐ (4.9/12)</div>
+          <p>200+ Candidates</p>
+          <div class="price"><del>₹42000</del> ₹16850</div>
+        </div>
+        <div class="btns">
+          <div class="btn btn-info">Course Info</div>
+          <div class="btn btn-buy">Buy Now</div>
+        </div>
+      </div>
+
+      <!-- SAP MM/SD -->
+      <div class="course-card">
+        <div class="card-header">SAP MM/SD</div>
+        <div class="info">
+          <div class="rating">⭐⭐⭐⭐⭐ (5.0/46)</div>
+          <p>1100+ Students</p>
+          <div class="price"><del>₹35000</del> ₹12000</div>
+        </div>
+        <div class="btns">
+          <div class="btn btn-info">Course Info</div>
+          <div class="btn btn-buy">Buy Now</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Navigation -->
+    <div class="prev" onclick="moveSlide(-1)">❮</div>
+    <div class="next" onclick="moveSlide(1)">❯</div>
+  </div>
+
+
+
+
+  <footer>
+    <div class="container">
+      <div>
+        <div class="brand"><span class="logo"></span><span>SquNik</span></div>
+        <p style="max-width:48ch;opacity:.8">A modern learning platform to connect you with the right instructor. This
+          is a demo website inspired by squnik.in for educational purposes.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="courses.html">Courses</a>
+        <a href="live.html">Live Classes</a>
+        <a href="about.html">About</a>
+      </div>
+
+      <div>
+        <h4>Support</h4>
+        <a href="contact.html">Contact</a>
+        <a href="#">FAQ</a>
+        <a href="#">Terms & Privacy</a>
+      </div>
+    </div>
+    <div class="copy">© SquNik Demo. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
