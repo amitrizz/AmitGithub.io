@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SquNik — Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div class="left">
+        <span>Email: support@squnik.in</span>
+      </div>
+      <div class="right">
+        <span>+91-8076660204 (Mon–Sat, 10 AM–6 PM)</span>
+        <div class="auth">
+          <a href="#">SIGN IN</a>
+          <a href="#">SIGN UP</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="container nav" id="nav">
+      <a class="brand" href="index.html">
+        <span class="logo"></span>
+        <span>SquNik</span>
+      </a>
+      <button class="hamburger" id="menuBtn">☰</button>
+      <div class="search">
+        <input type="text" placeholder="Search For Courses" aria-label="Search for courses" />
+        <button aria-label="Search">🔍</button>
+      </div>
+      <div class="navlinks">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <a href="courses.html">Our Courses ▾</a>
+          <div class="dropdown-content">
+            <a href="courses.html#sap">SAP</a>
+            <a href="courses.html#excel">MS Excel</a>
+            <a href="courses.html#accounting">Accounting</a>
+            <a href="courses.html#powerbi">Power BI</a>
+            <a href="courses.html#interview">Interview Preparation</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="live.html">Live Courses ▾</a>
+          <div class="dropdown-content">
+            <a href="live.html#ongoing">Ongoing</a>
+            <a href="live.html#upcoming">Upcoming</a>
+          </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="hero"
+    style="background-image: url('https://www.squnik.in/assets/images/bg/hero-bg-08.jpg'); background-size: cover;">
+
+    <div class="container">
+      <div>
+        <div class="eyebrow">ENROLL • LEARN • GROW • REPEAT</div>
+        <h1>Maximize Your Time With Us and Find The Right Instructor <span class="accent">For You</span></h1>
+        <p class="sub">Enroll, learn, grow, repeat! Get ready to achieve your learning goals with SquNik.</p>
+        <div class="actions">
+          <a class="btn primary" href="courses.html">Explore Courses</a>
+          <a class="btn ghost" href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="slideshow-container" id="carousel">
+    <div class="feature-slides" id="slides">
+
+      <!-- MIS English -->
+      <div class="feature-card">
+        <div class="card-header" style="border-radius: 50%; "><img  src="https://www.squnik.in/storage/photos/1/5464.png" alt="" width="50%" height="50%"></div>
+
+        <div class="btn btn-buy">Buy Now</div>
+      </div>
+      <!-- MIS English -->
+      <div class="course-card">
+        <div class="card-header">MIS Reporting (English)</div>
+        <img src="https://www.squnik.in/storage/photos/1/5464.png" alt="">
+        <div class="btn btn-buy">Buy Now</div>
+      </div>
+      <!-- MIS English -->
+      <div class="course-card">
+        <div class="card-header">MIS Reporting (English)</div>
+        <img src="https://www.squnik.in/storage/photos/1/5464.png" alt="">
+        <div class="btn btn-buy">Buy Now</div>
+      </div>
+      <!-- MIS English -->
+      <div class="course-card">
+        <div class="card-header">MIS Reporting (English)</div>
+        <img src="https://www.squnik.in/storage/photos/1/5464.png" alt="">
+        <div class="btn btn-buy">Buy Now</div>
+      </div>
+      <!-- MIS English -->
+      <div class="course-card">
+        <div class="card-header">MIS Reporting (English)</div>
+        <img src="https://www.squnik.in/storage/photos/1/5464.png" alt="">
+        <div class="btn btn-buy">Buy Now</div>
+      </div>
+
+    </div>
+
+    <!-- Navigation -->
+    <div class="prev" onclick="moveSlide(-1)">❮</div>
+    <div class="next" onclick="moveSlide(1)">❯</div>
+  </div>
+
+
+
+  <div class="slideshow-container" id="carousel">
+    <div class="slides" id="slides">
+
+      <!-- MIS English -->
+      <div class="course-card">
+        <div class="card-header">MIS Reporting (English)</div>
+        <div class="info">
+          <div class="rating">⭐⭐⭐⭐⭐ (4.9/7)</div>
+          <p>50+ Candidates</p>
+          <div class="price"><del>₹10000</del> ₹2999</div>
+        </div>
+        <div class="btns">
+          <div class="btn btn-info">Course Info</div>
+          <div class="btn btn-buy">Buy Now</div>
+        </div>
+      </div>
+
+      <!-- MIS Hindi -->
+      <div class="course-card">
+        <div class="card-header">MIS Reporting (Hindi)</div>
+        <div class="info">
+          <div class="rating">⭐⭐⭐⭐⭐ (4.8/8)</div>
+          <p>100+ Students</p>
+          <div class="price"><del>₹10000</del> ₹2999</div>
+        </div>
+        <div class="btns">
+          <div class="btn btn-info">Course Info</div>
+          <div class="btn btn-buy">Buy Now</div>
+        </div>
+      </div>
+
+      <!-- SAP FICO -->
+      <div class="course-card">
+        <div class="card-header">SAP FICO (English)</div>
+        <div class="info">
+          <div class="rating">⭐⭐⭐⭐⭐ (4.9/12)</div>
+          <p>200+ Candidates</p>
+          <div class="price"><del>₹42000</del> ₹16850</div>
+        </div>
+        <div class="btns">
+          <div class="btn btn-info">Course Info</div>
+          <div class="btn btn-buy">Buy Now</div>
+        </div>
+      </div>
+
+      <!-- SAP MM/SD -->
+      <div class="course-card">
+        <div class="card-header">SAP MM/SD</div>
+        <div class="info">
+          <div class="rating">⭐⭐⭐⭐⭐ (5.0/46)</div>
+          <p>1100+ Students</p>
+          <div class="price"><del>₹35000</del> ₹12000</div>
+        </div>
+        <div class="btns">
+          <div class="btn btn-info">Course Info</div>
+          <div class="btn btn-buy">Buy Now</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Navigation -->
+    <div class="prev" onclick="moveSlide(-1)">❮</div>
+    <div class="next" onclick="moveSlide(1)">❯</div>
+  </div>
+
+
+
+
+  <footer>
+    <div class="container">
+      <div>
+        <div class="brand"><span class="logo"></span><span>SquNik</span></div>
+        <p style="max-width:48ch;opacity:.8">A modern learning platform to connect you with the right instructor. This
+          is a demo website inspired by squnik.in for educational purposes.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="courses.html">Courses</a>
+        <a href="live.html">Live Classes</a>
+        <a href="about.html">About</a>
+      </div>
+
+      <div>
+        <h4>Support</h4>
+        <a href="contact.html">Contact</a>
+        <a href="#">FAQ</a>
+        <a href="#">Terms & Privacy</a>
+      </div>
+    </div>
+    <div class="copy">© SquNik Demo. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
