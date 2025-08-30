@@ -1151,28 +1151,11 @@
             opacity: 0.8;
         }
 
-        .mobile-cta-bar{
+        .mobile-cta-bar {
             display: none;
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-           .hearright{
-            display: none;
-           }
-
-           .cta-bar{
-            display: none;
-           }
-           .mobile-cta-bar{
-            display: block;
-           }
-
-           
-        .mobile-cta-bar {
+        .cta-bar {
             background: #FF3B00;
             /* Premium red-orange */
             color: white;
@@ -1185,16 +1168,57 @@
             top: 0;
             width: 100%;
             z-index: 1100;
-            /* higher than header */
         }
 
-        /* Email & Phone Links */
-        .mobile-cta-bar a {
+        .cta-bar a {
             color: white;
             font-weight: 600;
             text-decoration: none;
             margin-left: 4px;
         }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hearright {
+                display: none;
+            }
+
+            .cta-bar {
+                display: none;
+            }
+
+            .mobile-cta-bar {
+                display: block;
+            }
+
+
+            .mobile-cta-bar {
+                background: #FF3B00;
+                /* Premium red-orange */
+                color: white;
+                padding: 10px 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 14px;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 1100;
+                /* higher than header */
+            }
+
+            /* Email & Phone Links */
+            .mobile-cta-bar a {
+                color: white;
+                font-weight: 600;
+                text-decoration: none;
+                margin-left: 4px;
+            }
 
 
             .mobile-menu {
@@ -1340,13 +1364,13 @@
             <span>📧<a href="mailto:sarikfaruqui@gmail.com">sarikfaruqui@gmail.com</a></span>
         </div>
         <div class="mobile-cta-right">
-            <span>📞 +91-9716273213</span>
+            <span>📞<a href="tel:+91-9716273213">+91-9716273213 </a></span>
         </div>
     </div>
     <!-- Header -->
     <header id="header">
         <nav>
-            <div class="logo">Expert India</div>
+            <div class="logo">SAP GLOBAL STUDIES</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#courses">Courses</a></li>
@@ -1370,7 +1394,7 @@
         <div class="floating-shape shape-2"></div>
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Master Your Future with  Industry’s Leading SAP Trainers</h1>
+                <h1>Master Your Future with Industry’s Leading SAP Trainers</h1>
                 <p>Join 1000+ professionals who've accelerated their careers with our expert-led SAP courses and
                     guaranteed placement support</p>
                 <div class="hero-buttons">
@@ -1510,15 +1534,15 @@
                 </div>
                 <div class="course-body">
                     <ul class="course-features">
-                        <li>Materials Management Fundamentals</li>
-                        <li>Procurement & Inventory Control</li>
-                        <li>120+ Hours of Training</li>
+                        <li>P2P-Procure to Pay</li>
+                        <li>Master Data Management</li>
+                        <li>Inventory Management</li>
                         <li>Real-time Project Experience</li>
                         <li>Interview Preparation & Mock Tests</li>
                     </ul>
                     <div class="course-price">
                         <span class="price">₹45,000</span>
-                        <button class="enroll-btn">Enroll Now</button>
+                        <a href="#contact"><button class="enroll-btn">Enroll Now</button></a>
                     </div>
                 </div>
             </div>
@@ -1526,20 +1550,20 @@
             <div class="course-card">
                 <div class="course-header" style="background: #4CAF50">
                     <span class="course-badge">Advanced</span>
-                    <h3 class="course-name">SAP R2R</h3>
+                    <h3 class="course-name">SAP FICO</h3>
                     <p class="course-duration">Duration: 2.5 Months</p>
                 </div>
                 <div class="course-body">
                     <ul class="course-features">
-                        <li>Record to Report Process</li>
-                        <li>Financial Closing & Reporting</li>
-                        <li>100+ Hours of Training</li>
-                        <li>End-to-End Process Coverage</li>
-                        <li>Certification Preparation</li>
+                        <li>AP-Account Payable</li>
+                        <li>AR-Account Receivable</li>
+                        <li>R2R-Record to Report Process</li>
+                        <li>Real-time Project Experience</li>
+                        <li>Interview Preparation & Mock Tests</li>
                     </ul>
                     <div class="course-price">
                         <span class="price">₹40,000</span>
-                        <button class="enroll-btn">Enroll Now</button>
+                        <a href="#contact"><button class="enroll-btn">Enroll Now</button></a>
                     </div>
                 </div>
             </div>
@@ -1547,20 +1571,22 @@
             <div class="course-card">
                 <div class="course-header" style="background: #FB8C00">
                     <span class="course-badge">Latest Technology</span>
-                    <h3 class="course-name">SAP S/4HANA</h3>
+                    <h3 class="course-name">SAP SD</h3>
                     <p class="course-duration">Duration: 4 Months</p>
                 </div>
                 <div class="course-body">
                     <ul class="course-features">
-                        <li>Next-Gen ERP Suite</li>
-                        <li>Cloud & On-Premise Deployment</li>
-                        <li>150+ Hours of Training</li>
-                        <li>Machine Learning Integration</li>
-                        <li>Advanced Analytics & Reporting</li>
+                        <li>O2C-Order to Cash</li>
+                        <li>Billing</li>
+                        <li>Sales Activities</li>
+                        <li>Real-time Project Experience</li>
+                        <li>Interview Preparation & Mock Tests</li>
+                    </ul>
                     </ul>
                     <div class="course-price">
                         <span class="price">₹60,000</span>
-                        <button class="enroll-btn">Enroll Now</button>
+                        <a href="#contact"><button class="enroll-btn">Enroll Now</button></a>
+
                     </div>
                 </div>
             </div>
@@ -1732,7 +1758,7 @@
                 <ul class="contact-details">
                     <li>
                         <div class="icon">📍</div>
-                        <span>123 Tech Park, Mumbai, Maharashtra 400001</span>
+                        <span>Neelam Bata, Faridabad, Haryana 121001</span>
                     </li>
                     <li>
                         <div class="icon">📧</div>
@@ -1767,10 +1793,10 @@
                         <select id="course" name="course" required>
                             <option value="">Choose a course...</option>
                             <option value="sap-mm">SAP MM</option>
-                            <option value="sap-r2r">SAP R2R</option>
-                            <option value="sap-s4hana">SAP S/4HANA</option>
+                            <option value="sap-fico">SAP FICO</option>
+                            <option value="sap-sd">SAP SD</option>
                             <option value="power-bi">Power BI</option>
-                            <option value="python">Python</option>
+                            <option value="excel">Advanced Excel</option>
                         </select>
                     </div>
                     <button type="submit" class="submit-btn">Request Callback</button>
@@ -1826,6 +1852,50 @@
     </footer>
 
     <script>
+        function doPost(e) {
+            try {
+                // Google Sheet ID यहाँ डालें (URL से copy करें)
+                const SHEET_ID = 'YOUR_GOOGLE_SHEET_ID_HERE';
+                const sheet = SpreadsheetApp.openById(SHEET_ID).getActiveSheet();
+
+                // Form data parse करें
+                const data = JSON.parse(e.postData.contents);
+
+                // Current timestamp
+                const timestamp = new Date();
+
+                // Data को sheet में add करें
+                sheet.appendRow([
+                    data.name,
+                    data.email,
+                    data.phone,
+                    data.course,
+                    timestamp
+                ]);
+
+                // Success response
+                return ContentService
+                    .createTextOutput(JSON.stringify({
+                        status: 'success',
+                        message: 'Data saved successfully'
+                    }))
+                    .setMimeType(ContentService.MimeType.JSON);
+
+            } catch (error) {
+                // Error response
+                return ContentService
+                    .createTextOutput(JSON.stringify({
+                        status: 'error',
+                        message: error.toString()
+                    }))
+                    .setMimeType(ContentService.MimeType.JSON);
+            }
+        }
+
+        // CORS के लिए
+        function doGet() {
+            return HtmlService.createHtmlOutput('Form handler is working');
+        }
         // Remove loader after page loads
         window.addEventListener('load', () => {
             setTimeout(() => {
