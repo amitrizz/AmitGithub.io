@@ -634,7 +634,7 @@
         .enroll-btn {
             padding: 0.8rem 1.5rem;
             background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: var(--dark);
+            color: var(--light);
             ;
             border: none;
             border-radius: 25px;
@@ -1370,7 +1370,7 @@
     <!-- Header -->
     <header id="header">
         <nav>
-            <div class="logo">SAP GLOBAL STUDIES</div>
+            <div class="logo">SAP Matrix India</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#courses">Courses</a></li>
@@ -1526,11 +1526,24 @@
             <button class="tab-btn">Cloud & DevOps</button>
         </div>
         <div class="courses-grid">
-            <div class="course-card">
+            <div class="course-card" style="position: relative;">
+                <div class="discount-badge" style="position: absolute;
+            top: 50px;
+            right: -55px;
+            background: #ff6b6b;
+            color: white;
+            padding: 5px 100px;
+            font-weight: bold;
+            font-size: 16px;
+
+            transform: rotate(45deg);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 5;">
+                    60% OFF</div>
                 <div class="course-header" style="background: #F9A825">
                     <span class="course-badge">Most Popular</span>
                     <h3 class="course-name">SAP MM</h3>
-                    <p class="course-duration">Duration: 3 Months</p>
+                    <p class="course-duration">Duration: 2.5 Months</p>
                 </div>
                 <div class="course-body">
                     <ul class="course-features">
@@ -1541,13 +1554,29 @@
                         <li>Interview Preparation & Mock Tests</li>
                     </ul>
                     <div class="course-price">
-                        <span class="price">₹45,000</span>
+                        <div class="price-container" style="position: relative;">
+                            <span style="text-decoration: line-through; color: #999;">₹30,000</span>
+                            <span style="font-weight: bold; font-size: 24px;">₹12,000</span>
+                        </div>
                         <a href="#contact"><button class="enroll-btn">Enroll Now</button></a>
                     </div>
                 </div>
             </div>
 
-            <div class="course-card">
+            <div class="course-card" style="position: relative;">
+                <div class="discount-badge" style="position: absolute;
+            top: 50px;
+            right: -55px;
+            background: #ff6b6b;
+            color: white;
+            padding: 5px 100px;
+            font-weight: bold;
+            font-size: 16px;
+
+            transform: rotate(45deg);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 5;">
+                    60% OFF</div>
                 <div class="course-header" style="background: #4CAF50">
                     <span class="course-badge">Advanced</span>
                     <h3 class="course-name">SAP FICO</h3>
@@ -1562,17 +1591,33 @@
                         <li>Interview Preparation & Mock Tests</li>
                     </ul>
                     <div class="course-price">
-                        <span class="price">₹40,000</span>
+                        <div class="price-container" style="position: relative;">
+                            <span style="text-decoration: line-through; color: #999;">₹30,000</span>
+                            <span style="font-weight: bold; font-size: 24px;">₹12,000</span>
+                        </div>
                         <a href="#contact"><button class="enroll-btn">Enroll Now</button></a>
                     </div>
                 </div>
             </div>
 
-            <div class="course-card">
-                <div class="course-header" style="background: #FB8C00">
+            <div class="course-card" style="position: relative;">
+                <div class="discount-badge" style="position: absolute;
+            top: 50px;
+            right: -55px;
+            background: #ff6b6b;
+            color: white;
+            padding: 5px 100px;
+            font-weight: bold;
+            font-size: 16px;
+
+            transform: rotate(45deg);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 5;">
+                    60% OFF</div>
+                <div class="course-header" style="background: #8a9fc8">
                     <span class="course-badge">Latest Technology</span>
                     <h3 class="course-name">SAP SD</h3>
-                    <p class="course-duration">Duration: 4 Months</p>
+                    <p class="course-duration">Duration: 2 Months</p>
                 </div>
                 <div class="course-body">
                     <ul class="course-features">
@@ -1584,7 +1629,10 @@
                     </ul>
                     </ul>
                     <div class="course-price">
-                        <span class="price">₹60,000</span>
+                        <div class="price-container" style="position: relative;">
+                            <span style="text-decoration: line-through; color: #999;">₹25,000</span>
+                            <span style="font-weight: bold; font-size: 24px;">₹10,000</span>
+                        </div>
                         <a href="#contact"><button class="enroll-btn">Enroll Now</button></a>
 
                     </div>
@@ -1758,15 +1806,15 @@
                 <ul class="contact-details">
                     <li>
                         <div class="icon">📍</div>
-                        <span>Neelam Bata, Faridabad, Haryana 121001</span>
+                        <span>Sector 50 NIT Faridabad, Faridabad, Haryana 121001</span>
                     </li>
                     <li>
                         <div class="icon">📧</div>
-                        <span>info@squlearn.com</span>
+                        <span>sarikfaruqui@gmail.com</span>
                     </li>
                     <li>
                         <div class="icon">📞</div>
-                        <span>+91 98765 43210</span>
+                        <span>+91 97162 73213</span>
                     </li>
                     <li>
                         <div class="icon">⏰</div>
@@ -1779,10 +1827,6 @@
                     <div class="form-group">
                         <label for="name">Full Name</label>
                         <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number</label>
@@ -1809,7 +1853,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-brand">
-                <h3>SquLearn Institute</h3>
+                <h3>SAP Matrix India</h3>
                 <p>Empowering careers through quality education and industry-aligned training programs.</p>
                 <div class="social-links">
                     <a href="#">f</a>
@@ -1852,55 +1896,44 @@
     </footer>
 
     <script>
-        function doPost(e) {
+        const form = document.getElementById('contactForm');
+
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+
+            // Show loader when submitting
+            document.getElementById('loader').classList.remove('hidden');
+            loader.querySelector('.loader-text').textContent = 'Submitting your request...';
+
+            const formData = {
+                name: document.getElementById('name').value,
+                phone: document.getElementById('phone').value,
+                course: document.getElementById('course').value
+            };
+
             try {
-                // Google Sheet ID यहाँ डालें (URL से copy करें)
-                const SHEET_ID = 'YOUR_GOOGLE_SHEET_ID_HERE';
-                const sheet = SpreadsheetApp.openById(SHEET_ID).getActiveSheet();
-
-                // Form data parse करें
-                const data = JSON.parse(e.postData.contents);
-
-                // Current timestamp
-                const timestamp = new Date();
-
-                // Data को sheet में add करें
-                sheet.appendRow([
-                    data.name,
-                    data.email,
-                    data.phone,
-                    data.course,
-                    timestamp
-                ]);
-
-                // Success response
-                return ContentService
-                    .createTextOutput(JSON.stringify({
-                        status: 'success',
-                        message: 'Data saved successfully'
-                    }))
-                    .setMimeType(ContentService.MimeType.JSON);
-
+                const response = await fetch('https://script.google.com/macros/s/AKfycbyyfpoq7NbEjwhTbESJXHDmLBNXxBZc7CDnICHKeojOh8p7pvKEC0K16QGCD7oilRsaJA/exec', {
+                    method: 'POST',
+                    body: JSON.stringify(formData)
+                });
+                document.getElementById('loader').classList.add('hidden');
+                if (response.ok) {
+                    // Hide loader after everything completes
+                    alert('Thank you! Your message has been sent. Our team will contact you soon.');
+                    form.reset();
+                } else {
+                    alert('Error submitting the form. Please try again.');
+                }
             } catch (error) {
-                // Error response
-                return ContentService
-                    .createTextOutput(JSON.stringify({
-                        status: 'error',
-                        message: error.toString()
-                    }))
-                    .setMimeType(ContentService.MimeType.JSON);
+                alert('An error occurred. Please try again.');
             }
-        }
+        });
 
-        // CORS के लिए
-        function doGet() {
-            return HtmlService.createHtmlOutput('Form handler is working');
-        }
         // Remove loader after page loads
         window.addEventListener('load', () => {
             setTimeout(() => {
                 document.getElementById('loader').classList.add('hidden');
-            }, 1500);
+            }, 100);
         });
 
         // Smooth scrolling for navigation links
@@ -1969,13 +2002,6 @@
         // Observe all stat numbers
         document.querySelectorAll('.stat-number').forEach(stat => {
             counterObserver.observe(stat);
-        });
-
-        // Form submission
-        document.getElementById('contactForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Thank you for your interest! Our team will contact you within 24 hours.');
-            e.target.reset();
         });
 
         // Tab functionality
