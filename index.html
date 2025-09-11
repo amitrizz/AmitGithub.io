@@ -69,7 +69,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 5%;
+            padding: 10px 5%;
             max-width: 1400px;
             margin: 0 auto;
         }
@@ -1337,6 +1337,209 @@
             color: white;
             border: 1px solid white;
         }
+
+        /* modal css */
+       /* Modal Overlay */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 35px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-overlay.show {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 1;
+        }
+
+        /* Modal Container */
+        .modal {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            width: 90%;
+            max-height: 90vh;
+            overflow: hidden;
+            transform: scale(0.7);
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+
+        .modal-overlay.show .modal {
+            transform: scale(1);
+        }
+
+        /* Modal Header */
+        .modal-header {
+            padding: 20px 30px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .modal-title {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 28px;
+            color: white;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.2s;
+        }
+
+        .close-btn:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Modal Body */
+        .modal-body {
+            padding: 0px 30px;
+        }
+
+        .welcome-text {
+            text-align: center;
+            margin: 20px 0px;
+            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* YouTube Video Container */
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            /* margin-bottom: 20px; */
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Modal Footer */
+        .modal-footer {
+            padding: 10px 30px;
+            border-top: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8f9fa;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .checkbox-container input[type="checkbox"] {
+            transform: scale(1.2);
+        }
+
+        .checkbox-container label {
+            color: #666;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        /* Page Content */
+        .page-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .page-content h1 {
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .page-content p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .modal {
+                width: 95%;
+                margin: 20px;
+            }
+
+            .modal-header {
+                padding: 15px 20px;
+            }
+
+            .modal-title {
+                font-size: 20px;
+            }
+
+            .modal-body {
+                padding: 20px;
+            }
+
+            .modal-footer {
+                padding: 15px 20px;
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+
+        /* modal css end here */
     </style>
 </head>
 
@@ -1349,6 +1552,7 @@
         </div>
     </div>
 
+
     <div class="cta-bar">
         <div class="cta-left">
             <span>📧 Email us: <a href="mailto:sarikfaruqui.in@gmail.com">sarikfaruqui.in@gmail.com</a></span>
@@ -1357,6 +1561,35 @@
         <div class="cta-right">
 
             <span>📞 Customer Support: +91-9716273213 Mon-Sat (10 AM - 6 PM)</span>
+        </div>
+    </div>
+    <div id="welcomeModal" class="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 class="modal-title">Thankyou for Visit Our Website! 🎉</h2>
+                <button class="close-btn" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="welcome-text">
+                  Watch Our Demo Video for Sap MM Module Tutorial Before Visit Our Website.
+                </p>
+                <div class="video-container">
+                    <!-- Replace VIDEO_ID with your actual YouTube video ID -->
+                    <iframe 
+                        src="https://www.youtube.com/embed/QHnbUfaq1XQ?autoplay=0&rel=0&modestbranding=1" 
+                        title="Welcome Video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="checkbox-container">
+                    <input type="checkbox" id="dontShowAgain">
+                    <label for="dontShowAgain">Don't show me again</label>
+                </div>
+                <button class="btn" id="continueBtn">Continue to Site</button>
+            </div>
         </div>
     </div>
     <div class="mobile-cta-bar">
@@ -1370,7 +1603,8 @@
     <!-- Header -->
     <header id="header">
         <nav>
-            <div class="logo" style="display: flex;"><img width="55px" style="padding-right:10px;" src="images/logo.png" alt="excel img"> <span>SAP Matrix India</span></div>
+            <div class="logo" style="display: flex;"><img width="55px" style="padding-right:10px;" src="images/logo.png"
+                    alt="excel img"> <span>SAP Matrix India</span></div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#courses">Courses</a></li>
@@ -1430,8 +1664,9 @@
             <div class="features-carousel">
                 <!-- Original Features -->
                 <div class="feature-slide" style="min-width: 250px !important; height: 250px !important;">
-                    <div class="feature-icon-large" style="width: 100%;  margin-top: 25px !important;  background:none;"><img
-                            style="width: 100%;" src="images/au.jpg" alt="excel img"></div>
+                    <div class="feature-icon-large"
+                        style="width: 100%;  margin-top: 25px !important;  background:none;"><img style="width: 100%;"
+                            src="images/au.jpg" alt="excel img"></div>
                     <h3 class=" tech_text">Tableau</h3>
                 </div>
 
@@ -1519,12 +1754,12 @@
             <h2>Our Premium Courses</h2>
             <p>Choose from our industry-aligned curriculum designed by experts</p>
         </div>
-        <div class="course-tabs">
+        <!-- <div class="course-tabs">
             <button class="tab-btn active">All Courses</button>
             <button class="tab-btn">SAP Modules</button>
             <button class="tab-btn">Data Analytics</button>
             <button class="tab-btn">Cloud & DevOps</button>
-        </div>
+        </div> -->
         <div class="courses-grid">
             <div class="course-card" style="position: relative;">
                 <div class="discount-badge" style="position: absolute;
@@ -1555,8 +1790,8 @@
                     </ul>
                     <div class="course-price">
                         <div class="price-container" style="position: relative;">
-                            <span style="text-decoration: line-through; color: #999;">₹30,000</span>
-                            <span style="font-weight: bold; font-size: 24px;">₹12,000</span>
+                            <span style="text-decoration: line-through; color: #999;">₹24,999</span>
+                            <span style="font-weight: bold; font-size: 24px;">₹9,999</span>
                         </div>
                         <a href="#contact"><button class="enroll-btn">Enroll Now</button></a>
                     </div>
@@ -1592,8 +1827,8 @@
                     </ul>
                     <div class="course-price">
                         <div class="price-container" style="position: relative;">
-                            <span style="text-decoration: line-through; color: #999;">₹30,000</span>
-                            <span style="font-weight: bold; font-size: 24px;">₹12,000</span>
+                            <span style="text-decoration: line-through; color: #999;">₹24,999</span>
+                            <span style="font-weight: bold; font-size: 24px;">₹9,9999</span>
                         </div>
                         <a href="#contact"><button class="enroll-btn">Enroll Now</button></a>
                     </div>
@@ -1630,8 +1865,8 @@
                     </ul>
                     <div class="course-price">
                         <div class="price-container" style="position: relative;">
-                            <span style="text-decoration: line-through; color: #999;">₹25,000</span>
-                            <span style="font-weight: bold; font-size: 24px;">₹10,000</span>
+                            <span style="text-decoration: line-through; color: #999;">₹24,999</span>
+                            <span style="font-weight: bold; font-size: 24px;">₹9,999</span>
                         </div>
                         <a href="#contact"><button class="enroll-btn">Enroll Now</button></a>
 
@@ -1856,10 +2091,10 @@
                 <h3>SAP Matrix India</h3>
                 <p>Empowering careers through quality education and industry-aligned training programs.</p>
                 <div class="social-links">
-                    <a href="#">f</a>
-                    <a href="#">t</a>
-                    <a href="#">in</a>
-                    <a href="#">yt</a>
+                    <a href="https://www.youtube.com/@SAP_Matrix_India">f</a>
+                    <a href="https://www.youtube.com/@SAP_Matrix_India">t</a>
+                    <a href="https://www.youtube.com/@SAP_Matrix_India">in</a>
+                    <a href="https://www.youtube.com/@SAP_Matrix_India">yt</a>
                 </div>
             </div>
             <div class="footer-column">
@@ -1891,7 +2126,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2024 SquLearn Institute. All rights reserved. | Transforming careers since 2015</p>
+            <p>© 2025 SAP Matrix India. All rights reserved. | Transforming careers since 2023</p>
         </div>
     </footer>
 
@@ -2052,6 +2287,97 @@
             card.style.transition = 'all 0.6s ease';
             fadeObserver.observe(card);
         });
+
+
+        // modal js start
+        // Modal functionality
+        const modal = document.getElementById('welcomeModal');
+        const closeBtn = document.getElementById('closeModal');
+        const continueBtn = document.getElementById('continueBtn');
+        const dontShowCheckbox = document.getElementById('dontShowAgain');
+        
+        // Key for storing user preference
+        const MODAL_SHOWN_KEY = 'welcomeModalShown';
+        
+        // Check if user has visited before (stored in memory for this session)
+        let hasVisitedBefore = false;
+        
+        function showModal() {
+            modal.style.display = 'flex';
+            // Small delay for smooth animation
+            setTimeout(() => {
+                modal.classList.add('show');
+            }, 10);
+            
+            // Prevent body scroll when modal is open
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function hideModal() {
+            modal.classList.remove('show');
+            setTimeout(() => {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }, 300);
+        }
+        
+        function closeModal() {
+            // Check if user doesn't want to see modal again
+            if (dontShowCheckbox.checked) {
+                hasVisitedBefore = true;
+            }
+            hideModal();
+        }
+        
+        // Event listeners
+        closeBtn.addEventListener('click', closeModal);
+        continueBtn.addEventListener('click', closeModal);
+        
+        // Close modal when clicking outside
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+        
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && modal.classList.contains('show')) {
+                closeModal();
+            }
+        });
+        
+        // Show modal on page load if first visit
+        window.addEventListener('load', function() {
+            if (!hasVisitedBefore) {
+                // Small delay for better user experience
+                setTimeout(showModal, 500);
+            }
+        });
+        
+        // Optional: Add a button to manually show modal (for testing)
+        function showModalManually() {
+            showModal();
+        }
+        
+        // // Add manual trigger button for testing
+        // const manualBtn = document.createElement('button');
+        // manualBtn.textContent = 'Show Welcome Modal';
+        // manualBtn.style.cssText = `
+        //     position: fixed;
+        //     bottom: 20px;
+        //     right: 20px;
+        //     padding: 10px 20px;
+        //     background: #667eea;
+        //     color: white;
+        //     border: none;
+        //     border-radius: 6px;
+        //     cursor: pointer;
+        //     z-index: 999;
+        // `;
+        // manualBtn.addEventListener('click', showModalManually);
+        // document.body.appendChild(manualBtn);
+        // modal js end
     </script>
 </body>
 
